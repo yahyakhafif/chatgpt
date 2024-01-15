@@ -34,7 +34,7 @@ const App = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/completions', options);
+      const response = await fetch('https://chatgpt-server-murex.vercel.app/', options);
       const completion = await response.json();
 
       if (completion.choices && completion.choices.length > 0 && completion.choices[0].message) {
