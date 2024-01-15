@@ -34,7 +34,7 @@ const App = () => {
     }
 
     try {
-      const response = await fetch('https://chatgpt-server-murex.vercel.app/', options);
+      const response = await fetch('https://chat-gpt-clone-t807.onrender.com', options);
       const completion = await response.json();
 
       if (completion.choices && completion.choices.length > 0 && completion.choices[0].message) {
